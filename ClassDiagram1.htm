@@ -1,0 +1,32 @@
+﻿<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ClassDiagram1</title>
+  </head>
+  <body><img usemap="#DiagramMap" border="0" src="ClassDiagram1.png"><map name="DiagramMap">
+      <area shape="rectangle" title="Public Class Advice&#xA;Joinpointで実行される処理です。&#xD;&#xA;例えば、オブジェクトから分離されたログ出力などの処理はAdviceと呼ばれ、Joinpointで実行されます。" coords="561,9,704,57">
+      <area shape="rectangle" title="Public Class AopProxy&#xA;	Inherits System.Runtime.Remoting.Proxies.RealProxy&#xA;透過的プロクシ" coords="33,201,176,260">
+      <area shape="rectangle" title="Public Class Aspect&#xA;横断的な関心事が持つ振る舞い（処理のこと）と、いつ振る舞いを適用するかをまとめたものです。&#xD;&#xA;つまり、AdviceとPointcutをまとめたものをAspect(アスペクト)といいます。" coords="321,201,464,249">
+      <area shape="rectangle" title="Public Interface IMethodInterceptor&#xA;メソッドに対するInterceptorのインターフェイス" coords="321,393,464,441">
+      <area shape="rectangle" title="Public Interface IMethodInvocation&#xA;Interceptorからインターセプトされているメソッドの情報にアクセスするためのインターフェイス" coords="561,249,704,297">
+      <area shape="rectangle" title="Public Class Joinpoint&#xA;プロパティが利用された時やメソッドが呼び出された時など、Advice（振る舞い）を割り込ませることが可能なときのことです。&#xD;&#xA;なおAOPの実装によっては、「プロパティの利用はJoinpointにならない」「メソッドが呼び出されたときだけがJoinpointになる」などのように異なります。" coords="729,9,872,57">
+      <area shape="rectangle" title="Friend Class MethodInterceptorInvoker&#xA;	Implements MiYABiS.Study.Aop.IMethodInterceptor" coords="9,393,200,441">
+      <area shape="rectangle" title="Public Class MethodInvocation&#xA;	Implements MiYABiS.Study.Aop.IMethodInvocation" coords="321,584,464,632">
+      <area shape="rectangle" title="Public Class Pointcut&#xA;Joinpointのうち、Adviceを適用したいJoinpointを正規表現などを用いた条件を使用して絞り込むためのフィルタです。&#xD;&#xA;例えば、Adviceを適用したいのは「add」ではじまるメソッドが実行された時だけだとすると、&#xD;&#xA;条件を「add*」として絞り込まれたaddXxxメソッドが実行された時だけにAdviceが実行されるようにもできます。&#xD;&#xA;ここでは指定されたメソッド文字列が一致するときだけAdviceが実行されるようにします。" coords="321,9,464,57">
+      <area shape="rectangle" title="Friend Module Resources&#xA;ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。" coords="561,129,704,177">
+      <area shape="rectangle" title="Friend NotInheritable Class MySettings&#xA;	Inherits System.Configuration.ApplicationSettingsBase" coords="561,560,704,619">
+      <area shape="rectangle" title="Friend Module MySettingsProperty" coords="561,369,704,417">
+      <area shape="rectangle" title="AopProxy には、型 Aspect() の _aspects という名前のフィールドが存在します。" coords="177,225,320,225">
+      <area shape="rectangle" title="Aspect には、型 IMethodInterceptor の _interceptor という名前のフィールドが存在します。" coords="393,249,393,392">
+      <area shape="rectangle" title="Aspect には、型 Pointcut の _pointcut という名前のフィールドが存在します。" coords="393,57,393,200">
+      <area shape="rectangle" title="Aspect には、型 IMethodInterceptor の Interceptor という名前のプロパティが存在します。" coords="435,249,435,392">
+      <area shape="rectangle" title="Aspect には、型 Pointcut の Pointcut という名前のプロパティが存在します。" coords="435,57,435,200">
+      <area shape="rectangle" title="MethodInterceptorInvoker には、型 IMethodInterceptor の _interceptor という名前のフィールドが存在します。" coords="201,417,320,417">
+      <area shape="rectangle" title="MethodInterceptorInvoker には、型 MethodInterceptorInvoker の _next という名前のフィールドが存在します。" coords="75,441,136,464">
+      <area shape="rectangle" title="MethodInvocation には、型 IMethodInterceptor の _interceptor という名前のフィールドが存在します。" coords="393,441,393,584">
+      <area shape="rectangle" title="MySettings には、型 MySettings の defaultInstance という名前のフィールドが存在します。" coords="611,620,656,643">
+      <area shape="rectangle" title="MySettings には、型 MySettings の Default という名前のプロパティが存在します。" coords="611,536,656,559">
+      <area shape="rectangle" title="MySettingsProperty には、型 MySettings の Settings という名前のプロパティが存在します。" coords="580,417,580,560">
+    </map>
+  </body>
+</html>

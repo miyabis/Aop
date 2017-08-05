@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MiYABiS.Study.Aop.Advice" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Advice.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.AopProxy" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAQAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>AopProxy.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_aspects" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.Aspect" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAEAAABBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Aspect.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_interceptor" />
+      <Field Name="_pointcut" />
+      <Property Name="Interceptor" />
+      <Property Name="Pointcut" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.Joinpoint" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Joinpoint.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.MethodInterceptorInvoker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>MethodInterceptorInvoker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_interceptor" />
+      <Field Name="_next" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.MethodInvocation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIABAAAAFgAAAAACAAAAAAAAAAAAAEAQA=</HashCode>
+      <FileName>MethodInvocation.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_interceptor" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.Pointcut" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pointcut.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiYABiS.Study.Aop.My.MySettings" Collapsed="true">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="defaultInstance" />
+      <Property Name="Default" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Runtime.Remoting.Proxies.RealProxy" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MiYABiS.Study.Aop.IMethodInterceptor" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMethodInterceptor.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MiYABiS.Study.Aop.IMethodInvocation" Collapsed="true">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIABAAAAAgAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>IMethodInvocation.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Module Name="MiYABiS.Study.Aop.My.Resources.Resources" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="MiYABiS.Study.Aop.My.MySettingsProperty" Collapsed="true">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Settings" />
+    </ShowAsAssociation>
+  </Module>
+  <Font Name="MeiryoKe_UIGothic" Size="8.25" />
+</ClassDiagram>
