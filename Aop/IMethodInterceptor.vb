@@ -1,6 +1,6 @@
-
+﻿
 ''' <summary>
-''' ���\�b�h�ɑ΂���Interceptor�̃C���^�[�t�F�C�X
+''' メソッドに対するInterceptorのインターフェイス
 ''' </summary>
 ''' <remarks></remarks>
 Public Interface IMethodInterceptor

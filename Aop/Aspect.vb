@@ -1,7 +1,7 @@
-
+﻿
 ''' <summary>
-''' ���f�I�Ȋ֐S�������U�镑���i�����̂��Ɓj�ƁA���U�镑����K�p���邩���܂Ƃ߂����̂ł��B
-''' �܂�AAdvice��Pointcut���܂Ƃ߂����̂�Aspect(�A�X�y�N�g)�Ƃ����܂��B
+''' 横断的な関心事が持つ振る舞い（処理のこと）と、いつ振る舞いを適用するかをまとめたものです。
+''' つまり、AdviceとPointcutをまとめたものをAspect(アスペクト)といいます。
 ''' </summary>
 ''' <remarks></remarks>
 Public Class Aspect
@@ -11,7 +11,7 @@ Public Class Aspect
 	Private _pointcut As Pointcut
 
 	''' <summary>
-	''' �R���X�g���N�^
+	''' コンストラクタ
 	''' </summary>
 	''' <param name="interceptor">MethodInterceptor</param>
 	''' <param name="pointcut">Pointcut</param>

@@ -1,29 +1,29 @@
-
+ï»¿
 Imports System.Runtime.Remoting.Proxies
 Imports System.Runtime.Remoting.Messaging
 Imports System.Reflection
 
 ''' <summary>
-''' “§‰ß“IƒvƒƒNƒV
+''' é€éçš„ãƒ—ãƒ­ã‚¯ã‚·
 ''' </summary>
 ''' <remarks></remarks>
 Public Class AopProxy
 	Inherits RealProxy
 
-	''' <summary>“§‰ß“IƒvƒƒNƒV‚ğì¬‚·‚éŒ^</summary>
+	''' <summary>é€éçš„ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½œæˆã™ã‚‹å‹</summary>
 	Private _type As Type
 
 	Private _aspects() As Aop.Aspect
 
-	''' <summary>“§‰ß“IƒvƒƒNƒV‚ğì¬‚·‚éƒCƒ“ƒXƒ^ƒ“ƒX</summary>
+	''' <summary>é€éçš„ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½œæˆã™ã‚‹ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹</summary>
 	Private _target As Object
 
-#Region " ƒRƒ“ƒXƒgƒ‰ƒNƒ^ "
+#Region " ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ "
 
 	''' <summary>
-	''' ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	''' ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	''' </summary>
-	''' <param name="type">“§‰ß“IƒvƒƒNƒV‚ğì¬‚·‚éŒ^</param>
+	''' <param name="type">é€éçš„ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½œæˆã™ã‚‹å‹</param>
 	''' <remarks></remarks>
 	Public Sub New(ByVal type As Type)
 		MyBase.New(type)
@@ -31,9 +31,9 @@ Public Class AopProxy
 	End Sub
 
 	''' <summary>
-	''' ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	''' ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	''' </summary>
-	''' <param name="type">“§‰ß“IƒvƒƒNƒV‚ğì¬‚·‚éŒ^</param>
+	''' <param name="type">é€éçš„ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½œæˆã™ã‚‹å‹</param>
 	''' <param name="aspects"></param>
 	''' <remarks></remarks>
 	Public Sub New(ByVal type As Type, ByVal aspects() As Aop.Aspect)
@@ -41,11 +41,11 @@ Public Class AopProxy
 	End Sub
 
 	''' <summary>
-	''' ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	''' ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	''' </summary>
-	''' <param name="type">“§‰ß“IƒvƒƒNƒV‚ğì¬‚·‚éŒ^</param>
+	''' <param name="type">é€éçš„ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½œæˆã™ã‚‹å‹</param>
 	''' <param name="aspects"></param>
-	''' <param name="target">“§‰ß“IƒvƒƒNƒV‚ğì¬‚·‚éƒCƒ“ƒXƒ^ƒ“ƒX</param>
+	''' <param name="target">é€éçš„ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½œæˆã™ã‚‹ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹</param>
 	''' <remarks></remarks>
 	Public Sub New(ByVal type As Type, ByVal aspects() As Aop.Aspect, ByVal target As Object)
 		Me.New(type)

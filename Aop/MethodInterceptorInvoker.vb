@@ -1,14 +1,14 @@
-
+ï»¿
 Friend Class MethodInterceptorInvoker
 	Implements IMethodInterceptor
 
-	''' <summary>Ÿ‚Ìƒ}ƒbƒ`ƒ“ƒOˆ—</summary>
+	''' <summary>æ¬¡ã®ãƒãƒƒãƒãƒ³ã‚°å‡¦ç†</summary>
 	Private _interceptor As IMethodInterceptor
 
 	Private _next As MethodInterceptorInvoker
 
 	''' <summary>
-	''' ‚½‚ç‚¢‰ñ‚µ‚Ìæ‚ğİ’è‚µ‚Ü‚·B
+	''' ãŸã‚‰ã„å›ã—ã®å…ˆã‚’è¨­å®šã—ã¾ã™ã€‚
 	''' </summary>
 	''' <param name="interceptor"></param>
 	''' <returns></returns>
